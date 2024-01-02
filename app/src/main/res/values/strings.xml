@@ -1,6 +1,41 @@
 <resources>
     <string name="app_name">ProverbialPath</string>
     <string name="chapters">
-Chapters
-</string>
+    Chapters
+    </string>
+
+    <string name="button1">Chapter 1</string>
+    <string name="button2">Chapter 2</string>
+    <string name="button3">Chapter 3</string>
+    <string name="button4">Chapter 4</string>
+    <string name="button5">Chapter 5</string>
+    <string name="button6">Chapter 6</string>
+    <string name="button7">Chapter 7</string>
+    <string name="button8">Chapter 8</string>
+    <string name="button9">Chapter 9</string>
+    <string name="button10">Chapter 10</string>
+    <string name="button11">Chapter 11</string>
+    <string name="button12">Chapter 12</string>
+    <string name="button13">Chapter 13</string>
+    <string name="button14">Chapter 14</string>
+    <string name="button15">Chapter 15</string>
+    <string name="button16">Chapter 16</string>
+    <string name="button17">Chapter 17</string>
+    <string name="button18">Chapter 18</string>
+    <string name="button19">Chapter 19</string>
+    <string name="button20">Chapter 20</string>
+    <string name="button21">Chapter 21</string>
+    <string name="button22">Chapter 22</string>
+    <string name="button23">Chapter 23</string>
+    <string name="button24">Chapter 24</string>
+    <string name="button25">Chapter 25</string>
+    <string name="button26">Chapter 26</string>
+    <string name="button27">Chapter 27</string>
+    <string name="button28">Chapter 28</string>
+    <string name="button29">Chapter 29</string>
+    <string name="button30">Chapter 30</string>
+    <string name="button31">Chapter 31</string>
+
+
+
 </resources>
