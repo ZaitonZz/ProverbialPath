@@ -36,5 +36,9 @@
     <string name="button30">Chapter 30</string>
     <string name="button31">Chapter 31</string>
 
+    <string name="backbutton_read">Back</string>
+    <string name="read_scroll">Read</string>
+    <string name="proverbs_verse">Verse</string>
+
 
 </resources>
