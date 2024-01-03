@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AVLTree {
-    private AVLNode root;
+    private AVLNode rootNode;
 
     public AVLTree() {
     }
 
-    public AVLTree(AVLNode root) {
-        this.root = root;
+    public AVLTree(AVLNode rootNode) {
+        this.rootNode = rootNode;
     }
 
     public AVLNode insert(AVLNode root, AVLNode newNode){
@@ -67,7 +67,7 @@ public class AVLTree {
     }
 
     public int getHeight(){
-        return getHeight(root);
+        return getHeight(rootNode);
     }
 
     public int getHeight(AVLNode node){
@@ -82,30 +82,30 @@ public class AVLTree {
         return searchNode(lookingFor, node) ==  null;
     }
 
-    public AVLNode searchNode(int lookingFor){
-        return searchNode(lookingFor, root);
+    public AVLNode searchNode(int node){
+        return searchNode(node, rootNode);
     }
 
-    public AVLNode searchNode(int lookingFor, AVLNode node) {
-        if (node == null) {
+    public AVLNode searchNode(int node, AVLNode rootNode) {
+        if (rootNode == null) {
             return null;
         }
 
-        if (lookingFor < node.getVerse()) {
-            return searchNode(lookingFor, node.getLeftNode());
-        } else if (lookingFor > node.getVerse()) {
-            return searchNode(lookingFor, node.getRightNode());
+        if (node < rootNode.getVerse()) {
+            return searchNode(node, rootNode.getLeftNode());
+        } else if (node > rootNode.getVerse()) {
+            return searchNode(node, rootNode.getRightNode());
         } else {
-            return node;
+            return rootNode;
         }
     }
 
     public void insert(AVLNode newNode) {
-        root = insert(root, newNode);
+        rootNode = insert(rootNode, newNode);
     }
     public List<AVLNode> inOrder() {
         List<AVLNode> verseList = new ArrayList<>();
-        inOrderTraverse(root, verseList);
+        inOrderTraverse(rootNode, verseList);
         return verseList;
     }
 
@@ -117,4 +117,21 @@ public class AVLTree {
         }
     }
 
+    public AVLNode findMax(){
+        return findMax(rootNode);
+    }
+
+    public AVLNode findMax(AVLNode root){
+        if(root==null) return null;
+        else if(root.getRightNode()==null) return root;
+        return findMax(root.getRightNode());
+    }
+
+    public AVLNode getRootNode() {
+        return rootNode;
+    }
+
+    public void setRootNode(AVLNode rootNode) {
+        this.rootNode = rootNode;
+    }
 }

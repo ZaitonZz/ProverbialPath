@@ -65,4 +65,10 @@ public class AVLNode {
     public void setMetaWordsKeywords(String metaWordsKeywords) {
         this.metaWordsKeywords = metaWordsKeywords;
     }
+    public AVLNode contains(String query){
+        if (formattedText.toLowerCase().contains(query.toLowerCase()) || metaWordsKeywords.toLowerCase().contains(query.toLowerCase())){
+            return this;
+        }
+        return null;
+    }
 }

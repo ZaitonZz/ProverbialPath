@@ -22,21 +22,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/bg" />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_marginEnd="-50dp"
-            android:layout_marginBottom="30dp"
-            android:adjustViewBounds="true"
-            android:cropToPadding="true"
-            android:src="@tools:sample/avatars"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_wrapBehaviorInParent="horizontal_only"
-            app:srcCompat="@drawable/vecteezy" />
+            app:srcCompat="@drawable/bg_png" />
 
         <TextView
             android:id="@+id/landing_text3"
@@ -135,7 +121,7 @@
             android:layout_marginTop="8dp"
             android:fontFamily="@font/interregular"
             android:lineSpacingExtra="8sp"
-            android:text="A digital sanctuary where ancient wisdom meets modern solace.\n\nThe path ahead may be unclear, but at The Proverbial Path, you are never alone. Step onto the sun-dappled trail, open your heart to the words of wisdom, and let your journey begin. Whether you seek direction in the labyrinth of love, strength against life's tempests, or simply the quiet murmur of reassurance, tread The Proverbial Path. Let its verses light your way, unraveling the tangled skein of your journey."
+            android:text="@string/aboutUs"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="@+id/rectangle_4"
@@ -149,6 +135,7 @@
             android:layout_marginTop="84dp"
             android:backgroundTint="#A993A4"
             android:fontFamily="@font/saotorpes"
+            android:onClick="startChapters"
             android:text="start"
             android:textColor="#31233D"
             android:textSize="20sp"

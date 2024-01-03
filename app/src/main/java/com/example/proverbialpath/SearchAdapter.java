@@ -1,5 +1,6 @@
 package com.example.proverbialpath;
 
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -18,8 +19,8 @@ public class SearchAdapter extends RecyclerView.Adapter<SearchAdapter.SearchView
 
         public SearchViewHolder(@NonNull View itemView) {
             super(itemView);
-            mtextView1 = itemView.findViewById(R.id.textView5);
-            mtextView2 = itemView.findViewById(R.id.textView6);
+            mtextView1 = itemView.findViewById(R.id.chapter_num_item);
+            mtextView2 = itemView.findViewById(R.id.verse_num_item);
         }
     }
 
@@ -30,7 +31,9 @@ public class SearchAdapter extends RecyclerView.Adapter<SearchAdapter.SearchView
     @NonNull
     @Override
     public SearchViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.search_item, parent, false);
+        SearchViewHolder searchViewHolder = new SearchViewHolder(v);
+        return searchViewHolder;
     }
 
     @Override

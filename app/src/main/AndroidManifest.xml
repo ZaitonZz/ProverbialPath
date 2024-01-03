@@ -17,7 +17,11 @@
             android:exported="false" />
         <activity
             android:name=".ReadActivity"
-            android:exported="false" />
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".ChaptersActivity"
+            android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
