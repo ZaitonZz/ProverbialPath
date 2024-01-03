@@ -1,6 +1,7 @@
 package com.example.proverbialpath;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
@@ -18,6 +19,7 @@ public class ChaptersActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        hideSystemUI();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chapters);
         AutoCompleteTextView autoCompleteTextView = findViewById(R.id.searchbar_chapters);
@@ -32,6 +34,20 @@ public class ChaptersActivity extends AppCompatActivity {
                 return false;
             }
         });
+    }
+
+    private void hideSystemUI() {
+        View decorView = getWindow().getDecorView();
+
+        // Set flags for a transparent status bar
+        int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN;
+
+        decorView.setSystemUiVisibility(uiOptions);
+
+        // Set window flags for a transparent status bar
+        getWindow().setStatusBarColor(Color.TRANSPARENT);
     }
 
     public void startResults(){

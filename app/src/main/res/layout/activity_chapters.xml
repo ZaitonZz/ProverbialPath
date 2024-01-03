@@ -31,15 +31,17 @@
         android:hint="Search"
         android:imeOptions="actionSearch"
         android:inputType="text"
-        android:singleLine="true"
         android:paddingStart="24dp"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textSize="16sp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/chapterbg" />
+        app:layout_constraintTop_toTopOf="@+id/chapterbg"
+        app:simpleItemSelectedRippleColor="#CAA4A4" />
 
     <ScrollView
         android:id="@+id/scrollView3"

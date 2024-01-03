@@ -3,6 +3,7 @@ package com.example.proverbialpath;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -30,6 +31,7 @@ public class ReadActivity extends AppCompatActivity {
         setContentView(R.layout.activity_read);
         avlTrees = new LinkedList<>();
         populateLinkedList();
+        hideSystemUI();
 
         verses = findViewById(R.id.proverbs_verse);
         chapterTitle = findViewById(R.id.chapter_title);
@@ -39,6 +41,20 @@ public class ReadActivity extends AppCompatActivity {
         chapter = intent.getStringExtra("chapter");
 
         updateTextViews();
+    }
+
+    private void hideSystemUI() {
+        View decorView = getWindow().getDecorView();
+
+        // Set flags for a transparent status bar
+        int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN;
+
+        decorView.setSystemUiVisibility(uiOptions);
+
+        // Set window flags for a transparent status bar
+        getWindow().setStatusBarColor(Color.TRANSPARENT);
     }
 
     private void updateTextViews() {

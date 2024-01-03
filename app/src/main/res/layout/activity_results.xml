@@ -4,6 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/results"
+    android:paddingTop="20dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingBottom="0dp"
     tools:context=".ResultsActivity">
 
 
@@ -11,8 +16,10 @@
             android:id="@+id/search_recycle_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="20dp"
-            android:scrollbars="vertical"
-            android:background="@color/white"/>
+            android:background="@android:color/transparent"
+            android:overScrollMode="always"
+            android:paddingTop="20dp"
+            android:scrollbars="none"
+            />
 
 </RelativeLayout>

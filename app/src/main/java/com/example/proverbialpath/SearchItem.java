@@ -1,7 +1,6 @@
 package com.example.proverbialpath;
 
 public class SearchItem {
-    private int mImageResource;
     private String mText1;
     private String mText2;
 

@@ -11,7 +11,7 @@
         android:id="@+id/navbar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -49,8 +49,10 @@
         android:fontFamily="@font/intersemibold"
         android:text="The Proverbial Path"
         android:textColor="@color/proverbs_title_gray"
+        android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="@+id/navbar_chap_read"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navbar_chap_read" />
 
     <ScrollView
         android:id="@+id/read_view"
@@ -70,7 +72,6 @@
                 android:id="@+id/proverbs_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:fontFamily="@font/intersemibold"
                 android:text="Proverbs"
                 android:textColor="@color/proverbs_title_gray"
@@ -83,7 +84,7 @@
                 android:id="@+id/chapter_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="10dp"
                 android:fontFamily="@font/timesnewromanregular"
                 android:text="Chapter 1"
                 android:textColor="@color/reading_black"
@@ -101,11 +102,11 @@
                 android:layout_marginEnd="20dp"
                 android:contentDescription="@string/proverbs_verse"
                 android:fontFamily="@font/timesnewromanregular"
-                android:lineSpacingExtra="12sp"
+                android:lineSpacingExtra="10sp"
                 android:text="Lorem Ipsum"
                 android:textAlignment="textStart"
                 android:textColor="@color/reading_black"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/chapter_title" />

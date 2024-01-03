@@ -28,7 +28,7 @@
             android:id="@+id/landing_text3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="440dp"
+            android:layout_marginTop="350dp"
             android:letterSpacing="0.7"
             android:lineSpacingExtra="25sp"
             android:text="BY KEZIAH MARIZ BANTE"
@@ -72,12 +72,12 @@
             android:id="@+id/landing_flower"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="536dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
+            android:layout_marginTop="500dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/landing_text3"
-            app:srcCompat="@drawable/flower" />
+            app:srcCompat="@drawable/flower"
+            />
 
         <View
             android:id="@+id/rectangle_4"
@@ -85,7 +85,7 @@
             android:layout_height="524dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="72dp"
+            android:layout_marginTop="150dp"
             android:background="@drawable/rectangle_4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -132,7 +132,7 @@
             android:id="@+id/button"
             android:layout_width="149dp"
             android:layout_height="50dp"
-            android:layout_marginTop="84dp"
+            android:layout_marginTop="150dp"
             android:backgroundTint="#A993A4"
             android:fontFamily="@font/saotorpes"
             android:onClick="startChapters"
