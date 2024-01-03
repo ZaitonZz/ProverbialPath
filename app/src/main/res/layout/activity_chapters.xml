@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#656086">
+    android:background="#656086"
+    android:fadingEdgeLength="20dp">
 
 
     <ImageView
@@ -18,31 +19,38 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/searchbar"
+    <AutoCompleteTextView
+        android:id="@+id/searchbar_chapters"
         android:layout_width="0dp"
-        android:layout_height="110dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/chapters_searchbar"
+        android:fontFamily="@font/interextralight"
+        android:hint="Search"
+        android:imeOptions="actionSearch"
+        android:paddingStart="24dp"
+        android:textColorHint="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/searchbar" />
+        app:layout_constraintTop_toTopOf="@+id/chapterbg" />
 
     <ScrollView
         android:id="@+id/scrollView3"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="-20dp"
+        android:layout_marginTop="15dp"
         android:overScrollMode="always"
         android:scrollbars="none"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchbar"
+        app:layout_constraintTop_toBottomOf="@+id/searchbar_chapters"
         app:layout_constraintVertical_bias="1.0"
         app:layout_wrapBehaviorInParent="horizontal_only">
 
@@ -56,6 +64,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
                 android:fontFamily="@font/interregular"
                 android:text="@string/chapters"
                 android:textAppearance="@style/chapters"

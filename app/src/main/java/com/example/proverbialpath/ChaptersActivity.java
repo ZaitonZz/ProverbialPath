@@ -10,4 +10,5 @@ public class ChaptersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chapters);
     }
+
 }

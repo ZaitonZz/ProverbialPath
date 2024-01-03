@@ -58,7 +58,8 @@
         android:contentDescription="@string/read_scroll"
         android:scrollbars="none"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/navbar">
+        app:layout_constraintTop_toBottomOf="@+id/navbar"
+        >
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
